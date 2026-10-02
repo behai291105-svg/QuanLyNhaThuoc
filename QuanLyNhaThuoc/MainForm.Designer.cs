@@ -67,34 +67,34 @@
             label13 = new Label();
             label14 = new Label();
             groupBox4 = new GroupBox();
+            txtQuyDiemChung = new TextBox();
+            txtHangGiaDinh = new TextBox();
+            txtTongChiTieuNhom = new TextBox();
+            txtSoLuongThanhVien = new TextBox();
+            label17 = new Label();
+            label16 = new Label();
+            label15 = new Label();
+            label19 = new Label();
+            mstSdtChuHo = new MaskedTextBox();
+            btnTaoNhom = new Button();
+            btnTimNhom = new Button();
             label18 = new Label();
             label20 = new Label();
-            btnTimNhom = new Button();
-            btnTaoNhom = new Button();
-            mstSdtChuHo = new MaskedTextBox();
-            label19 = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            txtSoLuongThanhVien = new TextBox();
-            txtTongChiTieuNhom = new TextBox();
-            txtHangGiaDinh = new TextBox();
-            txtQuyDiemChung = new TextBox();
             groupBox3 = new GroupBox();
-            mstNhapSdtMoi = new MaskedTextBox();
-            label21 = new Label();
-            lvThanhVienNhom = new ListView();
-            groupBox5 = new GroupBox();
-            label22 = new Label();
             btnThemThanhVien = new Button();
-            lvKhoVoucherGiaDinh = new ListView();
+            lvThanhVienNhom = new ListView();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
             columnHeader6 = new ColumnHeader();
             columnHeader7 = new ColumnHeader();
             columnHeader8 = new ColumnHeader();
+            mstNhapSdtMoi = new MaskedTextBox();
+            label21 = new Label();
+            groupBox5 = new GroupBox();
+            lvKhoVoucherGiaDinh = new ListView();
             columnHeader9 = new ColumnHeader();
             columnHeader10 = new ColumnHeader();
+            label22 = new Label();
             ((System.ComponentModel.ISupportInitialize)nudDiem).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudDungDiem).BeginInit();
@@ -465,6 +465,97 @@
             groupBox4.TabStop = false;
             groupBox4.Text = "Thông Tin Nhóm:";
             // 
+            // txtQuyDiemChung
+            // 
+            txtQuyDiemChung.Location = new Point(186, 171);
+            txtQuyDiemChung.Name = "txtQuyDiemChung";
+            txtQuyDiemChung.Size = new Size(229, 27);
+            txtQuyDiemChung.TabIndex = 43;
+            // 
+            // txtHangGiaDinh
+            // 
+            txtHangGiaDinh.Location = new Point(186, 138);
+            txtHangGiaDinh.Name = "txtHangGiaDinh";
+            txtHangGiaDinh.Size = new Size(229, 27);
+            txtHangGiaDinh.TabIndex = 42;
+            // 
+            // txtTongChiTieuNhom
+            // 
+            txtTongChiTieuNhom.Location = new Point(186, 105);
+            txtTongChiTieuNhom.Name = "txtTongChiTieuNhom";
+            txtTongChiTieuNhom.Size = new Size(229, 27);
+            txtTongChiTieuNhom.TabIndex = 41;
+            // 
+            // txtSoLuongThanhVien
+            // 
+            txtSoLuongThanhVien.Location = new Point(186, 72);
+            txtSoLuongThanhVien.Name = "txtSoLuongThanhVien";
+            txtSoLuongThanhVien.Size = new Size(229, 27);
+            txtSoLuongThanhVien.TabIndex = 33;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(28, 138);
+            label17.Name = "label17";
+            label17.Size = new Size(109, 20);
+            label17.TabIndex = 39;
+            label17.Text = "Hạng Gia Đình:";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(28, 174);
+            label16.Name = "label16";
+            label16.Size = new Size(124, 20);
+            label16.TabIndex = 38;
+            label16.Text = "Qũy Điểm Chung:";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(28, 108);
+            label15.Name = "label15";
+            label15.Size = new Size(148, 20);
+            label15.TabIndex = 37;
+            label15.Text = "Tổng Chi Tiêu Nhóm:";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(28, 75);
+            label19.Name = "label19";
+            label19.Size = new Size(152, 20);
+            label19.TabIndex = 36;
+            label19.Text = "Số Lượng Thành Viên:";
+            // 
+            // mstSdtChuHo
+            // 
+            mstSdtChuHo.Location = new Point(126, 31);
+            mstSdtChuHo.Mask = "0000000000";
+            mstSdtChuHo.Name = "mstSdtChuHo";
+            mstSdtChuHo.Size = new Size(289, 27);
+            mstSdtChuHo.TabIndex = 35;
+            // 
+            // btnTaoNhom
+            // 
+            btnTaoNhom.Location = new Point(433, 66);
+            btnTaoNhom.Name = "btnTaoNhom";
+            btnTaoNhom.Size = new Size(113, 33);
+            btnTaoNhom.TabIndex = 25;
+            btnTaoNhom.Text = "Tạo Nhóm";
+            btnTaoNhom.UseVisualStyleBackColor = true;
+            btnTaoNhom.Click += btnTaoNhom_Click;
+            // 
+            // btnTimNhom
+            // 
+            btnTimNhom.Location = new Point(433, 28);
+            btnTimNhom.Name = "btnTimNhom";
+            btnTimNhom.Size = new Size(113, 33);
+            btnTimNhom.TabIndex = 24;
+            btnTimNhom.Text = "Tìm Nhóm";
+            btnTimNhom.UseVisualStyleBackColor = true;
+            // 
             // label18
             // 
             label18.AutoSize = true;
@@ -482,97 +573,6 @@
             label20.Size = new Size(0, 20);
             label20.TabIndex = 2;
             // 
-            // btnTimNhom
-            // 
-            btnTimNhom.Location = new Point(433, 28);
-            btnTimNhom.Name = "btnTimNhom";
-            btnTimNhom.Size = new Size(113, 33);
-            btnTimNhom.TabIndex = 24;
-            btnTimNhom.Text = "Tìm Nhóm";
-            btnTimNhom.UseVisualStyleBackColor = true;
-            // 
-            // btnTaoNhom
-            // 
-            btnTaoNhom.Location = new Point(433, 66);
-            btnTaoNhom.Name = "btnTaoNhom";
-            btnTaoNhom.Size = new Size(113, 33);
-            btnTaoNhom.TabIndex = 25;
-            btnTaoNhom.Text = "Tạo Nhóm";
-            btnTaoNhom.UseVisualStyleBackColor = true;
-            btnTaoNhom.Click += this.btnTaoNhom_Click;
-            // 
-            // mstSdtChuHo
-            // 
-            mstSdtChuHo.Location = new Point(126, 31);
-            mstSdtChuHo.Mask = "0000000000";
-            mstSdtChuHo.Name = "mstSdtChuHo";
-            mstSdtChuHo.Size = new Size(289, 27);
-            mstSdtChuHo.TabIndex = 35;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Location = new Point(28, 75);
-            label19.Name = "label19";
-            label19.Size = new Size(152, 20);
-            label19.TabIndex = 36;
-            label19.Text = "Số Lượng Thành Viên:";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(28, 108);
-            label15.Name = "label15";
-            label15.Size = new Size(148, 20);
-            label15.TabIndex = 37;
-            label15.Text = "Tổng Chi Tiêu Nhóm:";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(28, 174);
-            label16.Name = "label16";
-            label16.Size = new Size(124, 20);
-            label16.TabIndex = 38;
-            label16.Text = "Qũy Điểm Chung:";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new Point(28, 138);
-            label17.Name = "label17";
-            label17.Size = new Size(109, 20);
-            label17.TabIndex = 39;
-            label17.Text = "Hạng Gia Đình:";
-            // 
-            // txtSoLuongThanhVien
-            // 
-            txtSoLuongThanhVien.Location = new Point(186, 72);
-            txtSoLuongThanhVien.Name = "txtSoLuongThanhVien";
-            txtSoLuongThanhVien.Size = new Size(229, 27);
-            txtSoLuongThanhVien.TabIndex = 33;
-            // 
-            // txtTongChiTieuNhom
-            // 
-            txtTongChiTieuNhom.Location = new Point(186, 105);
-            txtTongChiTieuNhom.Name = "txtTongChiTieuNhom";
-            txtTongChiTieuNhom.Size = new Size(229, 27);
-            txtTongChiTieuNhom.TabIndex = 41;
-            // 
-            // txtHangGiaDinh
-            // 
-            txtHangGiaDinh.Location = new Point(186, 138);
-            txtHangGiaDinh.Name = "txtHangGiaDinh";
-            txtHangGiaDinh.Size = new Size(229, 27);
-            txtHangGiaDinh.TabIndex = 42;
-            // 
-            // txtQuyDiemChung
-            // 
-            txtQuyDiemChung.Location = new Point(186, 171);
-            txtQuyDiemChung.Name = "txtQuyDiemChung";
-            txtQuyDiemChung.Size = new Size(229, 27);
-            txtQuyDiemChung.TabIndex = 43;
-            // 
             // groupBox3
             // 
             groupBox3.Controls.Add(btnThemThanhVien);
@@ -586,22 +586,14 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Đóng Góp Của Thành Viên ";
             // 
-            // mstNhapSdtMoi
+            // btnThemThanhVien
             // 
-            mstNhapSdtMoi.Location = new Point(167, 26);
-            mstNhapSdtMoi.Mask = "0000000000";
-            mstNhapSdtMoi.Name = "mstNhapSdtMoi";
-            mstNhapSdtMoi.Size = new Size(248, 27);
-            mstNhapSdtMoi.TabIndex = 45;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Location = new Point(28, 29);
-            label21.Name = "label21";
-            label21.Size = new Size(109, 20);
-            label21.TabIndex = 44;
-            label21.Text = "Nhập SĐT Mới:";
+            btnThemThanhVien.Location = new Point(167, 59);
+            btnThemThanhVien.Name = "btnThemThanhVien";
+            btnThemThanhVien.Size = new Size(132, 33);
+            btnThemThanhVien.TabIndex = 44;
+            btnThemThanhVien.Text = "Thêm Thành Viên";
+            btnThemThanhVien.UseVisualStyleBackColor = true;
             // 
             // lvThanhVienNhom
             // 
@@ -614,46 +606,6 @@
             lvThanhVienNhom.TabIndex = 46;
             lvThanhVienNhom.UseCompatibleStateImageBehavior = false;
             lvThanhVienNhom.View = View.Details;
-            // 
-            // groupBox5
-            // 
-            groupBox5.Controls.Add(lvKhoVoucherGiaDinh);
-            groupBox5.Controls.Add(label22);
-            groupBox5.Location = new Point(1038, 501);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(565, 188);
-            groupBox5.TabIndex = 27;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "Kho Voucher";
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Location = new Point(19, 26);
-            label22.Name = "label22";
-            label22.Size = new Size(0, 20);
-            label22.TabIndex = 4;
-            // 
-            // btnThemThanhVien
-            // 
-            btnThemThanhVien.Location = new Point(167, 59);
-            btnThemThanhVien.Name = "btnThemThanhVien";
-            btnThemThanhVien.Size = new Size(132, 33);
-            btnThemThanhVien.TabIndex = 44;
-            btnThemThanhVien.Text = "Thêm Thành Viên";
-            btnThemThanhVien.UseVisualStyleBackColor = true;
-            // 
-            // lvKhoVoucherGiaDinh
-            // 
-            lvKhoVoucherGiaDinh.Columns.AddRange(new ColumnHeader[] { columnHeader9, columnHeader10 });
-            lvKhoVoucherGiaDinh.FullRowSelect = true;
-            lvKhoVoucherGiaDinh.GridLines = true;
-            lvKhoVoucherGiaDinh.Location = new Point(28, 26);
-            lvKhoVoucherGiaDinh.Name = "lvKhoVoucherGiaDinh";
-            lvKhoVoucherGiaDinh.Size = new Size(518, 146);
-            lvKhoVoucherGiaDinh.TabIndex = 5;
-            lvKhoVoucherGiaDinh.UseCompatibleStateImageBehavior = false;
-            lvKhoVoucherGiaDinh.View = View.Details;
             // 
             // columnHeader4
             // 
@@ -679,6 +631,46 @@
             // 
             columnHeader8.Text = "Vai Trò";
             // 
+            // mstNhapSdtMoi
+            // 
+            mstNhapSdtMoi.Location = new Point(167, 26);
+            mstNhapSdtMoi.Mask = "0000000000";
+            mstNhapSdtMoi.Name = "mstNhapSdtMoi";
+            mstNhapSdtMoi.Size = new Size(248, 27);
+            mstNhapSdtMoi.TabIndex = 45;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(28, 29);
+            label21.Name = "label21";
+            label21.Size = new Size(109, 20);
+            label21.TabIndex = 44;
+            label21.Text = "Nhập SĐT Mới:";
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(lvKhoVoucherGiaDinh);
+            groupBox5.Controls.Add(label22);
+            groupBox5.Location = new Point(1038, 501);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(565, 188);
+            groupBox5.TabIndex = 27;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Kho Voucher";
+            // 
+            // lvKhoVoucherGiaDinh
+            // 
+            lvKhoVoucherGiaDinh.Columns.AddRange(new ColumnHeader[] { columnHeader9, columnHeader10 });
+            lvKhoVoucherGiaDinh.FullRowSelect = true;
+            lvKhoVoucherGiaDinh.GridLines = true;
+            lvKhoVoucherGiaDinh.Location = new Point(28, 26);
+            lvKhoVoucherGiaDinh.Name = "lvKhoVoucherGiaDinh";
+            lvKhoVoucherGiaDinh.Size = new Size(518, 146);
+            lvKhoVoucherGiaDinh.TabIndex = 5;
+            lvKhoVoucherGiaDinh.UseCompatibleStateImageBehavior = false;
+            lvKhoVoucherGiaDinh.View = View.Details;
+            // 
             // columnHeader9
             // 
             columnHeader9.Text = "Voucher";
@@ -689,11 +681,19 @@
             columnHeader10.Text = "Ghi Chú";
             columnHeader10.Width = 300;
             // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(19, 26);
+            label22.Name = "label22";
+            label22.Size = new Size(0, 20);
+            label22.TabIndex = 4;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1621, 701);
+            ClientSize = new Size(1621, 461);
             Controls.Add(groupBox5);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);

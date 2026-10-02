@@ -8,16 +8,15 @@ namespace QuanLyNhaThuoc
 {
     internal class LichSuTichDiem
     {
+        public string MaGD {  get; set; }
         public string Sdt { get; set; }
+        public DateTime NgayGD { get; set; }
         public int SoDiemNhan { get; set; }
         public int SoDiemConLai { get; set; }
 
-        public int SoLuongTV {  get; set; }
-
-        public int 
-
-        public LichSuTichDiem(string sdt, DateTime ngayGD, int soDiemNhan, int soDiemConLai)
+        public LichSuTichDiem(string maGD, string sdt, DateTime ngayGD, int soDiemNhan, int soDiemConLai)
         {
+            MaGD = maGD;
             Sdt = sdt;
             NgayGD = ngayGD;
             SoDiemNhan = soDiemNhan;

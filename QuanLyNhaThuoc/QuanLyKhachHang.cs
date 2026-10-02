@@ -22,16 +22,14 @@ namespace QuanLyTichDiem_TNK47_Buoi3
 
         public KhachHang Tim1KhachHangTheoSDT(string sdt)
         {
-            KhachHang kq = null;
             foreach (var kh in DsKhachHang)
             {
                 if (kh.Sdt == sdt)
                 {
-                    kq = kh;
-                    break;
+                    return kh;
                 }
             }
-            return kq;
+            return null;
         }
 
         public List<KhachHang> TimKhachHangTheoHoTen(string hoTen)

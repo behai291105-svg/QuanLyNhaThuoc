@@ -20,9 +20,6 @@ namespace QuanLyNhaThuoc
             DsNhomGiaDinh = new List<NhomGiaDinh>();
         }
 
-        // ==========================================
-        // THUẬT TOÁN ĐỌC FILE (KHÔNG DÙNG LINQ)
-        // ==========================================
         public void DocFileLichSuTichDiem(string filePath)
         {
             if (File.Exists(filePath))
@@ -38,8 +35,7 @@ namespace QuanLyNhaThuoc
                     {
                         string maGD = parts[0].Trim();
                         string sdt = parts[1].Trim();
-                        DateTime ngayGD;
-                        DateTime.TryParse(parts[2].Trim(), out ngayGD);
+                        DateTime.TryParse(parts[2].Trim(), out DateTime ngayGD);
                         int diemNhan = int.Parse(parts[3].Trim());
                         int diemConLai = int.Parse(parts[4].Trim());
 
@@ -48,10 +44,6 @@ namespace QuanLyNhaThuoc
                 }
             }
         }
-
-        // ==========================================
-        // CÁC HÀM NGHIỆP VỤ BẰNG VÒNG LẶP FOREACH
-        // ==========================================
 
         // 1. Lọc danh sách điểm còn hạn (24 tháng) và còn điểm của 1 SĐT
         public List<LichSuTichDiem> LayDiemKhaDungCuaKhach(string sdt)
@@ -100,7 +92,7 @@ namespace QuanLyNhaThuoc
             return ketQua;
         }
 
-        public string TinhToanHangGiaDinh(string maGiaDinh, List<QuanLyTichDiem_TNK47_Buoi3.KhachHang> dsKhachHang, out decimal tongDiemChung)
+        public string TinhToanHangGiaDinh(string maGiaDinh, List<KhachHang> dsKhachHang, out decimal tongDiemChung)
         {
             tongDiemChung = 0;
             decimal tongChiTieu = 0;

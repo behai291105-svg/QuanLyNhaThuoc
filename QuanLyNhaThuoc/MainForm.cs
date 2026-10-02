@@ -5,6 +5,7 @@ namespace QuanLyNhaThuoc
     public partial class MainForm : Form
     {
         QuanLyKhachHang qlkh = new QuanLyKhachHang();
+        QuanLyDuLieuMoRong qlDuLieuMoRong = new QuanLyDuLieuMoRong();
         public MainForm()
         {
             InitializeComponent();
@@ -201,7 +202,7 @@ namespace QuanLyNhaThuoc
 
             // 1. Kiểm tra xem nhóm đã tồn tại chưa
             bool daTonTai = false;
-            foreach (NhomGiaDinh nhom in QuanLyDuLieuMoRong.DsNhomGiaDinh) // Giả sử qlDuLieuMoRong là biến toàn cục chứa dữ liệu
+            foreach (NhomGiaDinh nhom in qlDuLieuMoRong.DsNhomGiaDinh) // Giả sử qlDuLieuMoRong là biến toàn cục chứa dữ liệu
             {
                 if (nhom.MaGiaDinh == sdtChuHo)
                 {
@@ -217,7 +218,7 @@ namespace QuanLyNhaThuoc
             }
 
             // 2. Tạo nhóm mới và cập nhật khách hàng hiện tại thành chủ hộ
-            qlDuLieuMoRong.DsNhom.Add(new NhomGiaDinh(sdtChuHo));
+            qlDuLieuMoRong.DsNhomGiaDinh.Add(new NhomGiaDinh(sdtChuHo, DateTime.Now));
 
             KhachHang kh = qlkh.Tim1KhachHangTheoSDT(sdtChuHo);
             if (kh != null)
@@ -232,6 +233,10 @@ namespace QuanLyNhaThuoc
 
             MessageBox.Show("Tạo nhóm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             HienThiThongTinNhom(sdtChuHo);
+        }
+
+        private void HienThiThongTinNhom(string sdtChuHo)
+        {
         }
     }
 }
